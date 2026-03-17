@@ -1,0 +1,107 @@
+.overview-view {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .stat-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 1000px) {
+  .overview-grid { grid-template-columns: 1fr; }
+}
+
+.tracker-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.tracker-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border);
+}
+.tracker-row:last-child { border-bottom: none; }
+
+.tracker-id {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--accent);
+  background: var(--accent-dim);
+  padding: 2px 7px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  min-width: 36px;
+  text-align: center;
+}
+
+.tracker-name {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.tracker-right {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.tracker-badge {
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.context-card { display: flex; flex-direction: column; gap: 0; }
+.context-rows { display: flex; flex-direction: column; gap: 0; }
+
+.context-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.context-item:last-child { border-bottom: none; }
+
+.context-label { color: var(--text-muted); }
+.context-val { color: var(--text-primary); font-weight: 500; font-family: var(--font-mono); font-size: 12px; }
+.accent-cold { color: #4fc3f7 !important; }
+.accent-warm { color: #ff8c42 !important; }
+.accent-success { color: #66bb6a !important; }
+.accent-muted { color: var(--text-muted) !important; font-family: var(--font-body) !important; font-size: 13px !important; }
+
+.rq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 16px;
+}
+
+.rq-list li {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
