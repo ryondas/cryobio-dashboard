@@ -33,6 +33,7 @@ export const FROST_REGIONS = [
 
   // Asia
   { id: 'cn-xinjiang', name: 'Xinjiang, China', lat: 41.8, lng: 86.1, intensity: 0.70, cropRisk: 'high', crops: ['Grapes', 'Cotton', 'Tree fruits'], country: 'China', region: 'Asia', frostEvents: null, notes: 'Continental climate, significant frost events' },
+  { id: 'cd-congo', name: 'Congo Basin', lat: -2.0, lng: 23.5, intensity: 1.0, cropRisk: 'very-high', crops: ['Test Crop'], country: 'DRC', region: 'Africa', frostEvents: 99, notes: 'Test region — delete after confirming map update' },
   { id: 'jp-aomori', name: 'Aomori, Japan', lat: 40.8, lng: 140.7, intensity: 0.72, cropRisk: 'high', crops: ['Apples'], country: 'Japan', region: 'Asia', frostEvents: null, notes: 'Japan\'s premier apple region' },
   { id: 'tr-anatolia', name: 'Central Anatolia, Turkey', lat: 38.5, lng: 34.0, intensity: 0.65, cropRisk: 'high', crops: ['Apricots', 'Cherries', 'Grapes'], country: 'Turkey', region: 'Asia', frostEvents: null, notes: 'Turkey is top global apricot producer; frost critical' },
   { id: 'uz-fergana', name: 'Fergana Valley, Uzbekistan', lat: 40.4, lng: 71.8, intensity: 0.68, cropRisk: 'high', crops: ['Apricots', 'Grapes', 'Stone fruits'], country: 'Uzbekistan', region: 'Asia', frostEvents: null, notes: 'Historic fruit-growing region, significant frost exposure' },
