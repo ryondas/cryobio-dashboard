@@ -2,14 +2,18 @@ import { useState } from 'react'
 import HeatMapView from './views/HeatMapView'
 import OverviewView from './views/OverviewView'
 import CropsView from './views/CropsView'
-import CompetitorView from './views/CompetitorView'
+import BenchmarkView from './views/BenchmarkView'
+import GalleryView from './views/GalleryView'
+import PriorityMarketsView from './views/PriorityMarketsView'
 import './App.css'
 
 const NAV_ITEMS = [
   { id: 'overview', label: 'Overview', icon: '◈' },
   { id: 'heatmap', label: 'Frost Heat Map', icon: '⬡' },
+  { id: 'priority', label: 'Priority Markets', icon: '◆' },
+  { id: 'gallery', label: 'Map Gallery', icon: '▦' },
   { id: 'crops', label: 'Crops & Markets', icon: '◉' },
-  { id: 'competitors', label: 'Benchmarking', icon: '◎' },
+  { id: 'benchmark', label: 'Benchmarking', icon: '◎' },
 ]
 
 export default function App() {
@@ -61,8 +65,10 @@ export default function App() {
       <main className="main-content">
         {activeView === 'overview' && <OverviewView />}
         {activeView === 'heatmap' && <HeatMapView />}
+        {activeView === 'priority' && <PriorityMarketsView />}
+        {activeView === 'gallery' && <GalleryView />}
         {activeView === 'crops' && <CropsView />}
-        {activeView === 'competitors' && <CompetitorView />}
+        {activeView === 'benchmark' && <BenchmarkView />}
       </main>
     </div>
   )
