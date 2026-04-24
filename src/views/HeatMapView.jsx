@@ -86,7 +86,7 @@ export default function HeatMapView() {
 
       <div className="map-wrapper">
         <MapContainer center={[30, 10]} zoom={2} style={{ width: '100%', height: '100%' }} minZoom={2} maxZoom={10}>
-          <TileLayer url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png" attribution='© CartoDB' />
+          <TileLayer url="https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png" attribution='© CartoDB' />
           {heatLoaded && showHeat && <HeatLayer points={heatPoints} visible={showHeat} />}
           {showMarkers && filtered.map(region => {
             const riskColor = RISK_COLORS[region.cropRisk]?.color || '#888'

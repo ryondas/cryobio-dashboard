@@ -159,7 +159,7 @@ export default function BenchmarkView() {
       </div>
 
       {/* Full scorecard */}
-      <div className="card" style={{ overflowX: 'auto' }}>
+      <div className="card">
         <div className="card-title">Detailed Scorecard (1–5 per criterion)</div>
         <table className="data-table benchmark-table">
           <thead>

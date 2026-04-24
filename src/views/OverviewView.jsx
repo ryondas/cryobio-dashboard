@@ -4,11 +4,11 @@ import './OverviewView.css'
 const PROJECT_ITEMS = [
   { id: 'A1', project: 'A', name: 'Global Frost Damage Landscape Mapping', status: 'in-progress', priority: 'critical' },
   { id: 'A2', project: 'A', name: 'Crop, Value & Economic Impact Analysis', status: 'in-progress', priority: 'critical' },
-  { id: 'B3', project: 'B', name: 'Willingness-to-Pay & Market Fit Estimation', status: 'not-started', priority: 'high' },
+  { id: 'B3', project: 'B', name: 'Willingness-to-Pay & Market Fit Estimation', status: 'in-progress', priority: 'high' },
   { id: 'B4', project: 'B', name: 'Competitive & Practice Benchmarking', status: 'complete', priority: 'high' },
-  { id: 'C5', project: 'C', name: 'Regulatory, Trade & Policy Landscape Review', status: 'not-started', priority: 'medium' },
-  { id: 'C6', project: 'C', name: 'Funding, Incentives & Strategic Enablers', status: 'not-started', priority: 'medium' },
-  { id: 'X7', project: 'Final', name: 'Synthesis, Prioritization & Strategic Recommendations', status: 'not-started', priority: 'high' },
+  { id: 'C5', project: 'C', name: 'Regulatory, Trade & Policy Landscape Review', status: 'in-progress', priority: 'medium' },
+  { id: 'C6', project: 'C', name: 'Funding, Incentives & Strategic Enablers', status: 'in-progress', priority: 'medium' },
+  { id: 'X7', project: 'Final', name: 'Synthesis, Prioritization & Strategic Recommendations', status: 'in-progress', priority: 'high' },
 ]
 
 const STATUS_CONFIG = {

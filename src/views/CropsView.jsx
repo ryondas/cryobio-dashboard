@@ -23,8 +23,9 @@ export default function CropsView() {
         <table className="data-table">
           <thead>
             <tr>
-              <th>Crop</th><th>Regions exposed</th><th>High/very-high risk</th>
-              <th>Value/acre</th><th>Annual frost loss est.</th><th>WTP est. ($/acre)</th>
+              <th>Crop</th>
+              <th>Regions exposed</th>
+              <th>High/very-high risk regions</th>
             </tr>
           </thead>
           <tbody>
@@ -33,9 +34,6 @@ export default function CropsView() {
                 <td className="cell-primary">{crop}</td>
                 <td>{data.count}</td>
                 <td><span style={{ color: data.highRisk > 2 ? '#ef5350' : data.highRisk > 0 ? '#ff8c42' : '#66bb6a', fontWeight: 500 }}>{data.highRisk}</span></td>
-                <td className="cell-placeholder">— pending</td>
-                <td className="cell-placeholder">— pending</td>
-                <td className="cell-placeholder">— pending</td>
               </tr>
             ))}
           </tbody>

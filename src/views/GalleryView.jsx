@@ -2,11 +2,6 @@ import { useState } from 'react'
 import './GalleryView.css'
 
 const MAPS = [
-  // Revenue at Risk
-  { id: 'rev-global', file: 'revenue_at_risk_global.png', label: 'Revenue at Risk — Global', category: 'Revenue at Risk', region: 'Global' },
-  { id: 'rev-europe', file: 'revenue_at_risk_regional_europe.png', label: 'Revenue at Risk — Europe', category: 'Revenue at Risk', region: 'Europe' },
-  { id: 'rev-na', file: 'revenue_at_risk_regional_north_america.png', label: 'Revenue at Risk — North America', category: 'Revenue at Risk', region: 'North America' },
-  { id: 'rev-med', file: 'revenue_at_risk_regional_mediterranean.png', label: 'Revenue at Risk — Mediterranean', category: 'Revenue at Risk', region: 'Mediterranean' },
 
   // Combined
   { id: 'combined-global', file: 'crop_combined_highvalue_global.png', label: 'All High-Value Crops — Global', category: 'Combined', region: 'Global' },
@@ -20,10 +15,7 @@ const MAPS = [
   { id: 'peach', file: 'crop_peach_global.png', label: 'Peach — Global', category: 'Crop Maps', region: 'Global' },
   { id: 'cherry', file: 'crop_cherry_global.png', label: 'Cherry — Global', category: 'Crop Maps', region: 'Global' },
   { id: 'apricot', file: 'crop_apricot_global.png', label: 'Apricot — Global', category: 'Crop Maps', region: 'Global' },
-  { id: 'strawberry', file: 'crop_strawberry_global.png', label: 'Strawberry — Global', category: 'Crop Maps', region: 'Global' },
-  { id: 'blueberry', file: 'crop_blueberry_global.png', label: 'Blueberry — Global', category: 'Crop Maps', region: 'Global' },
-  { id: 'raspberry', file: 'crop_raspberry_global.png', label: 'Raspberry — Global', category: 'Crop Maps', region: 'Global' },
-  { id: 'cranberry', file: 'crop_cranberry_global.png', label: 'Cranberry — Global', category: 'Crop Maps', region: 'Global' },
+  
 ]
 
 const CATEGORIES = ['All', 'Revenue at Risk', 'Combined', 'Crop Maps']
